@@ -1,0 +1,24 @@
+{
+  "name": "suranku-dashboard",
+  "description": "",
+  "main": "",
+  "authors": [
+    "pragadeeswarviswanathansagunthala"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/viswanpr/suranku-dashboard",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "src/assets/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "dropzone": "^4.3.0",
+    "font-awesome": "^4.7.0"
+  }
+}
