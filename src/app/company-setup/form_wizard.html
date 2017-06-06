@@ -1,0 +1,45 @@
+<div style="margin-left: 220px; height:100%">
+<div class=" animated fadeInRight" style="height:100%">
+
+    <div style="height: 100%">
+        <div>
+            <div class="ibox">
+                <div class="ibox-content wizard" style="height:100%">
+                    <h2>
+                        Setup Wizard for {{companyName}}
+                    </h2>
+
+                    <p>
+                        This wizard will guide you in setting up your company.
+                        <br/>
+
+                    </p>
+                    <div class="steps clearfix">
+                        <ul>
+
+                            <li  [routerLinkActive]="['current']">
+                                <a  class="btn-default" routerLink="/home/setupCompany/SiteSetup"><span> >> </span> Site Setup</a>
+                            </li>
+                            <li [routerLinkActive]="['current']">
+                                <a  class="btn-default" routerLink="/home/setupCompany/ZoneSetup"><span> >> </span> Zone Setup</a>
+                            </li>
+                            <li [routerLinkActive]="['current']">
+                                <a  class="btn-default" routerLink="/home/setupCompany/SpotSetup"><span> >> </span> Spot Setup</a>
+                            </li>
+                            <!--<li ui-sref-active="current">
+                                <a ui-sref=".step_three" class="btn-default"><span>3</span> Terms and Conditions</a>
+                            </li>-->
+                        </ul>
+                    </div>
+                    <div class="wizard">
+                        <div class="content">
+                                <router-outlet></router-outlet>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+</div>

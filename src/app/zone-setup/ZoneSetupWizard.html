@@ -1,0 +1,42 @@
+<div class="rowx dashboard-header">
+    <div class="ibox">
+<div class="form-group">
+    <h2 class="p-xxs"> select site</h2>
+
+    <div class="input-group p-xxs">
+        <select chosen id="machineSelected" class="chosen-select" style="width:350px;" tabindex="4" [(ngModel)]="siteName">
+        <option *ngFor="let site of sites">
+            <p>{{site}}</p>
+        </option>
+        </select>
+    </div>
+</div>
+    </div>
+</div>
+<div class="rowx dashboard-header">
+    <div class="ibox">
+    <form name="setupForm" class="p-xxs">
+        <fieldset>
+            <h2>Add Zones for site {{siteName}}</h2>
+
+            <div class="row" >
+                <div class="col-lg-8">
+                    <div class="form-group">
+                        <label>Zone Name</label>
+                        <input id="zoneName" [(ngModel)]="zoneName" name="zoneName" type="text" class="form-control" ng-minlength="8">
+                    </div>
+                    <div class="form-group">
+                        <div><label>Machines in zone</label>
+                        <p>If a zone has more one machine, enter them in comma seperated format</p></div>
+                        <input id="machines" [(ngModel)]="machines" name="machines" type="text" class="form-control" ng-minlength="8">
+                        <!--<p ng-show="setupForm.siteName.$error.minlength" class="help-block">Example of validation - Username is too short (min 8 signs)</p>-->
+
+                    </div>
+                </div>
+            </div>
+            <a class="btn btn-primary" (click)="processSignupForm()">Add Zone</a>
+            <a routerLink="/home/setupCompany/SpotSetup" class="btn btn-primary">Next</a>
+        </fieldset>
+    </form>
+    </div>
+</div>

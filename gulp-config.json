@@ -1,0 +1,12 @@
+{
+  "distDir": "dist",
+  "production": {
+    "accessKeyId": "AKIAJ4G7EIYMK7JACAVA",
+    "secretAccessKey": "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",
+    "region": "us-east-2",
+    "params": {
+      "Bucket": "fantasycricketangular"
+    }
+  },
+  "productionHeaders": {}
+}

@@ -1,0 +1,7 @@
+{
+  "directory": "src/assets/bower_components",
+  "https-proxy": "http://pitc-zscaler-americas-cincinnati3pr.proxy.corporate.ge.com:80/",
+  "http-proxy": "http://pitc-zscaler-americas-cincinnati3pr.proxy.corporate.ge.com:80/",
+  "proxy": "http://pitc-zscaler-americas-cincinnati3pr.proxy.corporate.ge.com:80/",
+  "strict-ssl": "false"
+}

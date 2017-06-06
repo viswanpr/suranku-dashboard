@@ -1,0 +1,51 @@
+<nav class="navbar-default navbar-static-side" role="navigation">
+    <div class="sidebar-collapse">
+        <ul side-navigation class="nav metismenu" id="side-menu">
+            <li class="nav-header">
+
+                <div class="profile-element" uib-dropdown>
+                    <img alt="image" class="img-circle" src="../../assets/images/profile_small.jpg"/>
+                    <a uib-dropdown-toggle href>
+                            <span class="clear">
+                                <span class="block m-t-xs">
+                                    <strong class="font-bold">David Williams</strong>
+                             </span>
+                                <span class="text-muted text-xs block">Admin</span>
+                            </span>
+                    </a>
+
+                </div>
+                <div class="logo-element">
+                    IN+
+                </div>
+            </li>
+            <li>
+                <a routerLink="/home/dashboard" ><i class="fa fa-th-large"></i> <span class="nav-label" data-target="">Dashboard</span></a>
+                <!--<ul class="nav nav-second-level collapse" >
+                    <li ui-sref-active="active"><a>Sampling History</a></li>
+                    <li ui-sref-active="active"><a>Reports</a></li>
+                </ul>-->
+            </li>
+            <li ui-sref-active="active">
+                <a routerLink="/home/setupCompany/SiteSetup"><i class="fa fa-flask"></i> <span class="nav-label">Setup Company</span></a>
+            </li>
+
+            <li >
+                <a href=""><i class="fa fa-bar-chart-o"></i> <span class="nav-label">Site Reports</span></a>
+<!--                <ul class="nav nav-second-level collapse" >
+                    <li ui-sref-active="active"><a>Risk Level of Zones</a></li>
+                    <li ui-sref-active="active"><a>Scheduled Corrective Actions</a></li>
+                </ul>-->
+            </li>
+            <li>
+                <a href=""><i class="fa fa-table"></i> <span class="nav-label">Test History</span></a>
+            </li>
+            <li>
+                <a href=""><i class="fa fa-sitemap"></i> <span class="nav-label">Manage Members</span></a>
+            </li>
+
+
+        </ul>
+
+    </div>
+</nav>

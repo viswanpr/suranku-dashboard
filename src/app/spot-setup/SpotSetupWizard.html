@@ -1,0 +1,40 @@
+<div>
+<div>
+   <div class="rowx">
+                <h2>Spot Setup</h2>
+               <p>Upload a machine layout to mark spots</p>
+            <div class="col-lg-2">
+        </div>
+   </div>
+</div>
+<div class="wrapper wrapper-content animated fadeIn">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>Dropzone Area</h5>
+
+                        <div ibox-tools></div>
+                    </div>
+                    <div class="ibox-content">
+                        <dropzone class="upload-area" [config]="config" [message]="'Click or drag images here to upload'" (error)="onUploadError($event)" (success)="onUploadSuccess($event)"></dropzone>
+                        <!--<form action="/upload" class="dropzone needsclick dz-clickable" id="demo-upload">
+
+                            <div class="dz-message needsclick">
+                                Drop files here or click to upload.<br>
+                                <span class="note needsclick">(This is just a demo dropzone. Selected files are <strong>not</strong> actually uploaded.)</span>
+                            </div>
+
+                        </form>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <div id="MachineLayout">
+                <img [src]="MachineLayoutImage">
+            </div>
+    </div>
+</div>
+</div>
