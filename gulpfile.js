@@ -5,7 +5,7 @@ var gulp = require('gulp'),
     spawn = require('child_process').spawn;
 
 var localConfig = {
-    buildSrc: 'dist',
+    buildSrc: 'dist/**',
     getAwsConf: function (environment) {
         if (!conf[environment]) {
             throw 'No aws conf for env: ' + environment;
